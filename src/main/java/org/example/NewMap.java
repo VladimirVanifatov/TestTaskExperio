@@ -9,8 +9,6 @@ public interface NewMap<K, V> extends Map<K, V> {
 
     V orElse(Object key, V other);
 
-    V orElseThrow(Object key);
-
     <X extends Throwable> V orElseThrow(Object key, Supplier<? extends X> exceptionSupplier) throws X;
 
 }
